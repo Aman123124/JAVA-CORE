@@ -1,0 +1,301 @@
+                                                 ----------------------                                            
+                                                  String class methods
+                                                 ----------------------
+--------------------
+=>equals() method : 
+--------------------
+
+this method of string class compare two strings
+
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1="aman";
+     if(s1.equals("sameer"))
+     {
+        System.out.println("yes sameer");
+     }
+     else
+     {
+        System.out.println("who are you");
+     }
+     
+  }
+
+}
+
+--------------------
+=>length() method : 
+--------------------
+
+return the length of string
+
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1="aman hassan";
+     System.out.println("The length of String is = "+s1.length());     
+     
+  }
+
+}
+
+-----------------------
+=> toString() method : 
+-----------------------
+
+It returns the value of string object .
+
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1="aman hassan";
+     System.out.println("The returned string = "+s1.toString());     
+     
+  }
+
+}
+
+------------------------------
+=> equalsIgnoreCase() method : 
+------------------------------
+
+It Compares two strings, ignoring case considerations 
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String myStr1 = "Hello";
+     String myStr2 = "HELLO";
+     String myStr3 = "Another String";
+     System.out.println(myStr1.equalsIgnoreCase(myStr2));
+     System.out.println(myStr1.equalsIgnoreCase(myStr3));
+     
+  }
+
+}
+
+-------------------------
+=> compareTo()  method : 
+-------------------------
+
+This method compares two strings lexicographically.
+
+->if true it will give 0.
+->The comparison performed based on the Unicode value of each character in the   strings.
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     
+    String myStr1 = "Hello";
+    String myStr2 = "Hello";
+    System.out.println(myStr1.compareTo(myStr2)); // Returns 0 because they are equal
+  }
+
+}
+
+-----------------------------------  
+=> compareToIgnoreCase() method :
+-----------------------------------
+
+The compareToIgnoreCase() method compares two strings lexicographically, ignoring lower case and upper case differences.     
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     
+    String myStr1 = "HELLO";
+    String myStr2 = "hello";
+    System.out.println(myStr1.compareToIgnoreCase(myStr2));
+  }
+
+}
+
+----------------------------
+=> contentEquals() method :
+----------------------------
+
+This method  searches a string to find out if it contains the exact same sequence of  characters in the specified string or StringBuffer.  
+
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     
+    String myStr = "Hello";
+    System.out.println(myStr.contentEquals("Hello"));
+    System.out.println(myStr.contentEquals("e"));
+    System.out.println(myStr.contentEquals("Hi"));
+   
+  }
+
+}
+
+------------------------
+=> charAt() method  :  
+------------------------
+
+This method returns the character at the specified index in a string.  
+
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     
+    String Str = "Hello";
+    System.out.println(Str.charAt(0));
+    System.out.println(Str.charAt(1));
+    System.out.println(Str.charAt(2));
+    System.out.println(Str.charAt(3));
+    
+  }
+
+}
+
+
+------------------
+=> lastIndexOf() :
+------------------
+
+This method to returns the position of the last occurrence of specified character(s) in a string.
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1 = "java programming";
+     System.out.println("last index of  a = "+s1.lastIndexOf("a"));
+  }
+
+}
+
+
+------------- 
+=>indexOf() :
+-------------
+
+
+returns the position of the first occurrence of specified character(s) in a string.
+
+class Check
+{
+  public static void main(String[] args)
+  {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.indexOf("planet"));
+  }
+
+}
+
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1 = "java programming";
+     System.out.println("last index of  a = "+s1.indexOf("a",5));
+  }
+
+}
+
+here print the index of "a" character count the after 5th index .
+
+
+
+-----------
+=>length():  
+-----------
+
+Return the number of characters in a string:
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     System.out.println(txt.length());                                      
+  }
+
+}
+
+
+----------------------
+=> contains() method :
+----------------------
+
+this method checks whether a string contains a sequence of characters.
+Returns true if the characters exist and false if not.
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1 = "java programming";
+     System.out.println(s1.contains("a"));
+     System.out.println(s1.contains("l"));
+  }
+
+}
+
+----------------------------------
+startWith() and endsWith method():
+----------------------------------
+
+* startsWith = Checks whether a string starts with specified characters if yes return true otherwise return false.
+* endsWith =  Checks whether a string ends with the specified characters if yes return true otherwise return false.
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1 = "java programming is the popular in recent era";
+     System.out.println(s1.startsWith("java"));
+     System.out.println(s1.endsWith("era"));
+     System.out.println(s1.startsWith("programming"));
+  }
+
+}
+
+--------------------
+substring method ():
+--------------------
+
+This method Returns a new string which is the substring of a specified string
+
+
+class Check
+{
+  public static void main(String[] args)
+  {
+     String s1 = "java programming is the popular in recent era";
+     System.out.println(s1.substring(6));
+     System.out.println(s1.substring(22));
+     System.out.println(s1.substring(30));
+  }
+
+}
+
+note : - the 6 we pass in substring means we want to print from 6th index.
+
+
+
+
+
+
+
+
+
+
+
